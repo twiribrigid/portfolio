@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: orange;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(file:///C:/Users/Public/Pictures/Sample%20Pictures/Jellyfish.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: wavy;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li ::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: gray;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 60px;
+    color: aqua;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header-text h1{
+    font-size: 30px;
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+}#about{
+    padding: 80px 0;
+    color:black;
+    background-color: azure;
+}
+.row{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: darkblue;
+}
+#resume{
+    padding: 40px 0;
+}
+.education{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+}
+.education div{
+    background: orangered;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.education div a{
+    text-decoration: none;
+    font-size: 12px;
+    margin-top: 30px;
+    display: inline-block;
+}
+.education div:hover{
+background: #ff004f;
+transform: translateY(-10px);
+}
+
+
+#CONTACT{
+    padding: 40px 0;
+    background-color: black;
+}
+.Email{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+}
+.Email{
+    background: darkolivegreen;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.Email a{
+    text-decoration: none;
+    font-size: 12px;
+    margin-top: 30px;
+    display: inline-block;
+}
+.Email div:hover{
+background: #ff004f;
+transform: translateY(-10px);
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 600px){
+
+}
+
+
